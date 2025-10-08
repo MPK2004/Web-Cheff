@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supabase‑style Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #3ECF8E, #1B995B);
+  color: white;
+  padding: 60px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: white;
+  color: #1B995B;
+  font-weight: bold;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-left: 10px;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.feature {
+  flex: 1 1 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">YourLogo</div>
+      <ul class="nav-links">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#" class="btn primary">Start your project</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Build in a weekend. Scale to millions.</h1>
+      <p>Start your project with a Postgres database, Authentication, API, Storage, and more.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn primary">Start your project</a>
+        <a href="#" class="btn secondary">Request a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Postgres Database</h2>
+      <p>Every project includes a full Postgres database.</p>
+    </div>
+    <div class="feature">
+      <h2>Authentication</h2>
+      <p>User sign-ups and logins, secured with Row Level Security.</p>
+    </div>
+    <div class="feature">
+      <h2>Storage</h2>
+      <p>Organize and serve large files, images, and videos.</p>
+    </div>
+    <!-- Add more features as needed -->
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Your Company Name</p>
+      <ul class="footer-links">
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
