@@ -10,9 +10,7 @@ export async function POST(request) {
     }
 
     // This logic determines if the request includes an image
-    const model = contents.some(c => c.parts.some(p => p.inlineData)) 
-      ? 'gemini-pro-vision' 
-      : 'gemini-2.5-pro';
+    const model = 'gemini-2.5-pro';
       
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
     
